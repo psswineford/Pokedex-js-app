@@ -25,3 +25,19 @@ let pokemonList = [
     type: ['electric']
   }
 ];
+
+// loop through pokemonList array and print a list of pokemon
+for (let i = 0; i < pokemonList.length; i++){
+  let pokemonHeight = pokemonList[i].height;
+  let comment = '';  // initilizing the comment variable
+  //if else statement to set comment on pokemon based on height size
+  if (pokemonHeight > 1) {
+    comment = "Wow , what a big Pokemon!";
+  } else if (pokemonHeight < 0.5){
+    comment = "What a tiny Pokemon!";
+  } else {
+    comment = "That's a cute Pokemon!";
+  }
+  //write out the pokemon list to html
+  document.write(pokemonList[i].name + ' - Height: ' + pokemonList[i].height + ' -- ' + comment + '<br>');
+}
