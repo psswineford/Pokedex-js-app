@@ -1,4 +1,4 @@
-let pokemonList = [
+const pokemonList = [
   {
     name: 'Bulbasaur',
     height: 0.7,
@@ -39,5 +39,5 @@ for (let i = 0; i < pokemonList.length; i++){
     comment = "That's a cute Pokemon!";
   }
   //write out the pokemon list to html
-  document.write(pokemonList[i].name + ' - Height: ' + pokemonList[i].height + ' -- ' + comment + '<br>');
+  document.write(`${pokemonList[i].name} - Height: ${pokemonList[i].height} -- ${comment}<br>`)
 }
