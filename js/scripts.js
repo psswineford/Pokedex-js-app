@@ -38,23 +38,33 @@ let pokemonRepository = (function() {
   function getAll() {
     return pokemonList;
   };
+  //create list of pokemon buttons
+  function addPokemonListItem(pokemon){
+    let pokemonListElement = document.querySelector(".pokemon-list"); //select the UL from index page
+    let pokemonListItem = document.createElement("li");
+    let button = document.createElement("button");
+    button.innerText = pokemon.name;
+    button.classList.add("pokemon-button-class");
+    button.addEventListener('click', function (){
+      console.log(pokemon);
+    })
+    pokemonListItem.appendChild(button);
+    pokemonListElement.appendChild(pokemonListItem);
+  };
+
+  function showDetails(pokemon) {
+    console.log();
+  }
 
   return {
     add: add,
-    getAll: getAll
+    getAll: getAll,
+    addPokemonListItem: addPokemonListItem,
+    showDetails: showDetails
   };
 })();
 
 //retrieve pokemon array and display into HTML
 pokemonRepository.getAll().forEach(function(pokemon) {
-  let comment = '';  //initialize comment variable
-  if (pokemon.height > 1){
-    comment = "Wow, What a big Pokemon!";
-  }else if (pokemon.height < 0.5) {
-    comment = "What a tiny Pokemon!";
-  }else {
-    comment = "That's a cute Pokemon!";
-  }
-  document.write(`${pokemon.name} - Height: ${pokemon.height} -- ${comment} <br>`);
-
+  pokemonRepository.addPokemonListItem(pokemon);
 });
