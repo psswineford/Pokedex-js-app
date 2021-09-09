@@ -15,6 +15,11 @@ body {
     padding : var(--padding);
 }
 
+h1 {
+  color: white;
+  font-family: 'Bangers', cursive;
+}
+
 .pokemon-list {
   list-style-type: none;
   display: flex;
@@ -28,25 +33,25 @@ body {
 }
 
 .pokemon-button-class {
-  box-shadow:inset 0px 1px 0px 0px #efdcfb;
-	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
-	background-color:#dfbdfa;
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color:#63b8ee;
 	border-radius:6px;
-	border:1px solid #c584f3;
-	display:inline;
+	border:1px solid #3866a3;
+	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color: white;
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
   width: 155px;
 	padding:6px 24px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #9752cc;
+	text-shadow:0px 1px 0px #7cacde;
 }
 .pokemon-button-class:hover {
-	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
-	background-color:#bc80ea;
+  background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+	background-color:#468ccf;
 }
 .pokemon-button-class:active {
 	position:relative;
@@ -64,11 +69,15 @@ body {
   
 }
 
-#btn-back-to-top {
-  position: fixed;
-  bottom: 35px;
-  right: 35px;
-  display: none;
-  background-color: var(--secondary-text-color);
-  color: black;
+.nav-logo{
+  
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-image: linear-gradient(to left, #18458b, #0064a9, #0084c3, #00a5d9, #12c5eb);
+}
+
+.container__main {
+  padding-top: 60px;
+    padding-bottom: 100px;
+    
 }
