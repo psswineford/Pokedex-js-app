@@ -1,0 +1,74 @@
+:root {
+  --Azure: #f0ffff;
+  --padding: 20px;
+}
+body {
+  background-color: var(--Azure);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: var(--padding);
+}
+h1 {
+  color: #fff;
+  font-family: Bangers, cursive;
+}
+.pokemon-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.pokemon-list li {
+  padding: 7px;
+}
+.pokemon-button-class {
+  box-shadow: inset 0 1px 0 0 #bee2f9;
+  background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+  background-color: #63b8ee;
+  border-radius: 6px;
+  border: 1px solid #3866a3;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 700;
+  width: 155px;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #7cacde;
+}
+.pokemon-button-class:hover {
+  background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+  background-color: #468ccf;
+}
+.pokemon-button-class:active {
+  position: relative;
+  top: 1px;
+}
+.modal-content {
+  color: #fff;
+  position: relative;
+  background: #b92b27;
+  background: -webkit-linear-gradient(to right, #1565c0, #b92b27);
+  background: linear-gradient(to right, #1565c0, #b92b27);
+}
+.nav-logo {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-image: linear-gradient(
+    to left,
+    #18458b,
+    #0064a9,
+    #0084c3,
+    #00a5d9,
+    #12c5eb
+  );
+}
+.container__main {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
